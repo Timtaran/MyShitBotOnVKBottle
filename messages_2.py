@@ -21,8 +21,8 @@ async def nonamecommand(message: Message, code):
 @logger.catch()
 async def nonamecommand(message: Message):
 	await message.answer('Hi')
-@logger.catch()
-'''@bot.on.message(text="message <peer_id> <message>")
+'''@logger.catch()
+@bot.on.message(text="message <peer_id> <message>")
 async def message(message: Message, peer_id, messages):
 	#await message.ctx_api.messages.send(peer_id=peer_id, message=messages, random_id=0)
 	await message.ctx_api.messages.send(peer_id=peer_id, random_id=0, message=messages)
